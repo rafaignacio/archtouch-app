@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, } from 'react-native';
+import FilmesComponent from './filmes';
 
-class HomeScreen extends React.Component {
+class HomeScreen extends Component {
     static navigationOptions = {
         title: 'Filmes',
     };
@@ -9,7 +10,7 @@ class HomeScreen extends React.Component {
     render() {
       return (
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-          <Text>Home Screen</Text>
+          <FilmesComponent />
         </View>
       );
     }
